@@ -1,0 +1,405 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212121;
+  margin: 0;
+}
+
+.content {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-color: #212121;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.content2 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-color: #212121;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 82px;
+  font-weight: 700;
+  list-style-type: none;
+  margin-bottom: 0;
+  background-color: #212121;
+}
+
+.navbar a {
+  color: #f3f0e6;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #da4e3b;
+}
+
+.intro {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 52px;
+  line-height: 180%;
+  color: #f3f0e6;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.contactbutton img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+  z-index: 1;
+  -webkit-animation: rotate-center 10s linear infinite both;
+  animation: rotate-center 10s linear infinite both;
+}
+
+.contactbutton :hover {
+  -webkit-animation: scale-up-center 0.4s ease-in-out both;
+  animation: scale-up-center 0.4s ease-in-out both;
+}
+
+.scrolling_text {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+}
+
+.text {
+  font-family: DM Sans;
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f3f0e6;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+.text span {
+  margin: 0 5px;
+}
+.textboxtop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+  padding: 2vw;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.textboxtop h1 {
+  font-size: 100px;
+  line-height: 90%;
+  color: #f3f0e6;
+  margin-bottom: 0;
+}
+
+.textboxtop h2 {
+  font-family: DM Sans;
+  font-weight: 500;
+}
+
+.textboxtop p {
+  margin-top: 0;
+  font-family: DM Sans;
+  font-size: 22px;
+  color: #f3f0e6;
+}
+
+.textboxtop video {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  z-index: 2;
+}
+
+.textbox {
+  max-width: 32%;
+}
+
+.between {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.between h1 {
+  font-family: "Bricolage Grotesque";
+  font-size: 200px;
+  text-align: center;
+  color: #f3f0e6;
+  margin-bottom: 10px;
+}
+
+.between h2 {
+  font-family: "Bricolage Grotesque";
+  font-size: 400px;
+  text-align: center;
+  color: #f3f0e6;
+  margin-bottom: 0;
+}
+
+.between video {
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.between2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Bricolage Grotesque";
+  font-size: 200px;
+  text-align: center;
+  color: #f3f0e6;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.between2 h1 {
+  margin-bottom: 0;
+}
+
+.between2 video {
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.between3 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Bricolage Grotesque";
+  font-size: 200px;
+  text-align: center;
+  color: #f3f0e6;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.between3 h1 {
+  margin-bottom: 0;
+}
+.between3 video {
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+hr {
+  border: 1px solid #f3f0e6;
+}
+
+.about {
+  margin-bottom: 200px;
+}
+
+.about h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 250px;
+  color: #f3f0e6;
+  margin-bottom: 0;
+}
+
+.about p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  color: #f3f0e6;
+}
+
+footer {
+  background-color: #da4e3b;
+  max-height: none;
+  min-height: 10vh;
+  z-index: 1;
+}
+
+.footertext {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw 5vw 5vw 5vw;
+}
+
+.footertext h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: #f3f0e6;
+}
+
+.footertext p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2vw;
+  color: #f3f0e6;
+}
+
+.footertext a {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #f3f0e6;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    font-size: 24px;
+  }
+
+  .intro {
+    font-size: 22px;
+    line-height: 180%;
+  }
+
+  .contactbutton img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .textboxtop h1 {
+    font-size: 50px;
+    line-height: 90%;
+  }
+
+  .textboxtop p {
+    font-size: 16px;
+  }
+
+  .textboxtop video {
+    width: 100%;
+  }
+
+  .textbox {
+    max-width: 100%;
+  }
+
+  .between h1 {
+    font-size: 46px;
+  }
+
+  .between h2 {
+    font-size: 50px;
+  }
+
+  .between2 {
+    font-size: 40px;
+  }
+
+  .between3 {
+    font-size: 40px;
+  }
+
+  .about h1 {
+    font-size: 50px;
+  }
+
+  .about p {
+    font-size: 32px;
+  }
+
+  .footertext h1 {
+    font-size: 36px;
+  }
+
+  .footertext p {
+    font-size: 20px;
+  }
+
+  .footertext a {
+    font-size: 20px;
+  }
+}
+
+/* Animation for infinite scrolling text */
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/*Fade in Effect on load */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Rotate Button*/
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
